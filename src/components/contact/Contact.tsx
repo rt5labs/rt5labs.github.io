@@ -21,12 +21,11 @@ export default function Contact() {
           </div>
 
           <h2 className="m-0 text-[clamp(30px,5vw,48px)] tracking-tighter text-ink-50">
-            Vamos construir seu próximo software?
+            Vamos construir seu próximo SaaS B2B sob medida?
           </h2>
 
           <p className="mx-auto mt-3 max-w-[600px] text-ink-200">
-            Conte-nos sobre o seu projeto ou o desafio que sua empresa precisa resolver.
-            Planejamos e construímos a solução ideal para o seu negócio.
+            Conte-nos sobre a operação da sua empresa. Desenhamos e desenvolvemos a plataforma ideal com arquitetura Cloud First e entrega contínua.
           </p>
 
           <a
@@ -39,7 +38,7 @@ export default function Contact() {
           </a>
 
           <p className="mt-5 font-mono text-xs text-ink-400">
-            Engenharia sob medida · Alta performance · Infraestrutura escalável
+            SaaS B2B Sob Demanda · AI-Native · Cloud First · Continuous Delivery
           </p>
         </div>
       </div>

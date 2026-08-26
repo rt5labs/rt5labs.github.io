@@ -1,4 +1,4 @@
-import { Wrench, Cloud, Rocket } from 'lucide-react';
+import { Wrench, Cloud, Rocket, Bot } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 interface Service {
@@ -10,21 +10,27 @@ interface Service {
 const services: Service[] = [
   {
     icon: Wrench,
-    title: 'SaaS & Software Sob Medida',
+    title: 'SaaS B2B Sob Demanda',
     description:
-      'Plataformas web, APIs e sistemas personalizados para automatizar processos e escalar operações.',
+      'Sistemas e plataformas web desenhados sob medida para automatizar as operações da sua empresa.',
+  },
+  {
+    icon: Bot,
+    title: 'AI-Native & Automação',
+    description:
+      'Integração de LLMs, agentes autônomos, busca semântica (RAG) e fluxos de IA aplicados ao seu negócio.',
   },
   {
     icon: Cloud,
-    title: 'Cloud & Infrastructure',
+    title: 'Cloud First & Architecture',
     description:
-      'Arquitetura em nuvem, infraestrutura como código (IaC), containers e ambientes de alta disponibilidade.',
+      'Arquitetura resiliente em nuvem (AWS/GCP), infraestrutura como código (IaC), containers e escalabilidade.',
   },
   {
     icon: Rocket,
-    title: 'DevOps & Continuous Delivery',
+    title: 'Continuous Delivery & DevOps',
     description:
-      'Pipelines CI/CD, testes automatizados, observabilidade e deploy contínuo com alta confiabilidade.',
+      'Pipelines CI/CD automatizados, testes contínuos, observabilidade e deploy em produção com máxima segurança.',
   },
 ];
 
@@ -36,7 +42,7 @@ export default function Services() {
       </div>
       <h2 className="section-heading">O que fazemos</h2>
 
-      <div className="mt-7 grid gap-3.5 sm:grid-cols-3">
+      <div className="mt-7 grid gap-3.5 sm:grid-cols-2 lg:grid-cols-4">
         {services.map((s) => {
           const Icon = s.icon;
           return (

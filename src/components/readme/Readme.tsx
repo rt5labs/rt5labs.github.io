@@ -1,7 +1,10 @@
+import { Sparkles, Cloud, Bot } from 'lucide-react';
+
 const badges = [
-  { label: 'SaaS', cls: 'badge-green' },
-  { label: 'Cloud', cls: 'badge-blue' },
-  { label: 'Delivery', cls: 'badge-yellow' },
+  { label: 'SaaS B2B', cls: 'badge-green' },
+  { label: 'AI-Native', cls: 'badge-blue' },
+  { label: 'Cloud First', cls: 'badge-yellow' },
+  { label: 'Continuous Delivery', cls: 'badge-orange' },
 ];
 
 export default function Readme() {
@@ -31,26 +34,60 @@ export default function Readme() {
           </div>
 
           <p className="m-0 max-w-[760px] text-ink-200">
-            A <strong>RT5 Labs</strong> é um laboratório de engenharia e tecnologia especializado
-            em criar soluções digitais sob medida, unindo três pilares fundamentais:{' '}
+            A <strong>RT5 Labs</strong> é um laboratório de tecnologia especializado no desenvolvimento de{' '}
+            <strong className="text-ink-50">SaaS B2B sob demanda</strong> e plataformas <strong className="text-ink-50">AI-Native</strong>, integrando quatro pilares fundamentais:{' '}
             <code className="rounded bg-ink-850 px-1.5 py-0.5 font-mono text-[0.9em] text-green">
               engenharia de software
             </code>{' '}
             +{' '}
             <code className="rounded bg-ink-850 px-1.5 py-0.5 font-mono text-[0.9em] text-green">
-              arquitetura cloud
+              ai-native
             </code>{' '}
             +{' '}
             <code className="rounded bg-ink-850 px-1.5 py-0.5 font-mono text-[0.9em] text-green">
-              visão de negócio
+              cloud first
+            </code>{' '}
+            +{' '}
+            <code className="rounded bg-ink-850 px-1.5 py-0.5 font-mono text-[0.9em] text-green">
+              continuous delivery
             </code>
             .
           </p>
 
+          {/* SaaS para leigos + SaaS B2B sob demanda + AI-Native */}
+          <div className="my-7 max-w-[760px] rounded-lg border border-ink-500 bg-ink-850 p-5 sm:p-6">
+            <div className="flex items-center gap-2 font-mono text-xs text-green">
+              <Sparkles size={15} />
+              <span>O QUE É SAAS NA PRÁTICA? (SEM JARGÃO)</span>
+            </div>
+
+            <p className="mt-2.5 text-sm leading-relaxed text-ink-100">
+              <strong>SaaS</strong> <em>(Software as a Service)</em> é um sistema que funciona 100% online — no navegador ou celular —, sem necessidade de instalar programas locais ou manter servidores físicos. Toda a infraestrutura, segurança e atualizações ficam na nuvem.
+            </p>
+
+            <div className="mt-4 pt-4 border-t border-ink-600/60">
+              <div className="flex items-center gap-2 font-mono text-xs text-yellow">
+                <Cloud size={14} />
+                <span>POR QUE SAAS B2B SOB DEMANDA?</span>
+              </div>
+              <p className="mt-1.5 text-sm leading-relaxed text-ink-200">
+                Softwares engessados de prateleira forçam sua empresa a adaptar seus processos à ferramenta. Nós fazemos o caminho oposto: construímos o sistema sob medida para as regras e desafios da sua operação, com arquitetura <strong>Cloud First</strong> e deploys contínuos.
+              </p>
+            </div>
+
+            <div className="mt-4 pt-4 border-t border-ink-600/60">
+              <div className="flex items-center gap-2 font-mono text-xs text-blue">
+                <Bot size={14} />
+                <span>ARQUITETURA AI-NATIVE & AI-READY</span>
+              </div>
+              <p className="mt-1.5 text-sm leading-relaxed text-ink-200">
+                Criamos sistemas preparados desde o primeiro dia para integrar inteligência artificial aplicada, modelos de linguagem (LLMs), agentes autônomos e fluxos automatizados de dados diretamente no fluxo de trabalho da sua equipe.
+              </p>
+            </div>
+          </div>
+
           <p className="mt-4 max-w-[760px] text-ink-200">
-            Desenvolvemos plataformas escaláveis e softwares personalizados que resolvem
-            desafios operacionais reais. Cada projeto é construído com arquitetura sólida,
-            código limpo e pronto para suportar o crescimento da sua empresa.
+            Trabalhamos com código limpo, testes automatizados e esteiras de entrega contínua, garantindo que o software evolua com agilidade e máxima segurança.
           </p>
 
           <div className="sep" />
@@ -61,10 +98,10 @@ export default function Readme() {
               <span className="text-green">#</span> posicionamento
             </h3>
             <blockquote className="m-0 border-l-2 border-green/60 pl-5 text-lg text-ink-100">
-              Diagnóstico → Arquitetura → Software em Produção.
+              Diagnóstico → Arquitetura Cloud & AI-Native → Continuous Delivery.
               <br />
               <span className="text-ink-300">
-                Soluções modernas, código confiável e foco em entregas contínuas que geram valor real.
+                Software resiliente, automação inteligente e foco em entregas contínuas de alto impacto.
               </span>
             </blockquote>
           </div>

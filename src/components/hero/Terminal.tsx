@@ -1,16 +1,17 @@
 const lines: { text: string; cls?: string }[] = [
-  { text: '✓ analyzing requirements', cls: 'text-green' },
-  { text: '✓ designing architecture', cls: 'text-green' },
-  { text: '✓ building software', cls: 'text-green' },
-  { text: '✓ provisioning cloud infra', cls: 'text-green' },
-  { text: '✓ deploying to production', cls: 'text-green' },
+  { text: '✓ analyzing b2b requirements', cls: 'text-green' },
+  { text: '✓ cloud-first & ai-ready architecture', cls: 'text-green' },
+  { text: '✓ software engineering & ai integration', cls: 'text-green' },
+  { text: '✓ provisioning cloud infra (IaC)', cls: 'text-green' },
+  { text: '✓ continuous delivery to production', cls: 'text-green' },
 ];
 
 const meta: { key: string; value: string; valueCls?: string }[] = [
-  { key: 'status', value: '● operational', valueCls: 'text-green' },
-  { key: 'stack', value: 'React · TypeScript · Node' },
-  { key: 'infra', value: 'AWS · Docker · Terraform' },
-  { key: 'delivery', value: 'CI/CD · Automated' },
+  { key: 'model', value: 'SaaS B2B Sob Demanda' },
+  { key: 'ai', value: 'AI-Native & AI-Ready', valueCls: 'text-green' },
+  { key: 'arch', value: 'Cloud First Architecture' },
+  { key: 'delivery', value: 'CI/CD Automated' },
+  { key: 'status', value: '● production ready', valueCls: 'text-green' },
 ];
 
 export default function Terminal() {
