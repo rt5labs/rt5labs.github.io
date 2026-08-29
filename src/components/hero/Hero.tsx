@@ -1,7 +1,11 @@
-import { ArrowRight, MessageCircle } from 'lucide-react';
+import { ArrowRight, MessageCircle, Calendar, Bot, Sparkles } from 'lucide-react';
 import Terminal from './Terminal';
 
-export default function Hero() {
+interface HeroProps {
+  onNavigateTab?: (tab: 'rt5labs' | 'agenda' | 'studio') => void;
+}
+
+export default function Hero({ onNavigateTab }: HeroProps) {
   return (
     <section className="relative pt-24 pb-20 sm:pt-28 sm:pb-24">
       <div className="container-content">
@@ -41,6 +45,36 @@ export default function Hero() {
                 Fale conosco
               </a>
             </div>
+
+            {/* Quick Product Jumps */}
+            {onNavigateTab && (
+              <div className="mt-8 pt-6 border-t border-ink-600/60">
+                <span className="block text-xs font-mono text-ink-400 mb-2.5">
+                  ✦ Produtos Flagship VibeCodia no Ar:
+                </span>
+                <div className="flex flex-wrap gap-2.5">
+                  <button
+                    type="button"
+                    onClick={() => onNavigateTab('agenda')}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-amber/40 bg-amber/10 text-amber text-xs font-medium hover:bg-amber/20 transition-colors"
+                  >
+                    <Calendar size={13} />
+                    VibeCodia Agenda 2.0
+                    <span className="text-[10px] font-mono text-amber/80">→</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => onNavigateTab('studio')}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-cyan/40 bg-cyan/10 text-cyan text-xs font-medium hover:bg-cyan/20 transition-colors"
+                  >
+                    <Bot size={13} />
+                    VibeCodia AI Studio
+                    <span className="text-[10px] font-mono text-cyan/80">→</span>
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* right — terminal */}

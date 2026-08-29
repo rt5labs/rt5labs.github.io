@@ -23,9 +23,43 @@ export default {
           soft: 'rgba(63, 185, 80, 0.12)',
           glow: 'rgba(63, 185, 80, 0.8)',
         },
+        cyan: {
+          DEFAULT: '#00f0ff',
+          soft: 'rgba(0, 240, 255, 0.12)',
+          glow: 'rgba(0, 240, 255, 0.6)',
+        },
+        amber: {
+          DEFAULT: '#f59e0b',
+          soft: 'rgba(245, 158, 11, 0.12)',
+          glow: 'rgba(245, 158, 11, 0.6)',
+        },
+        purple: {
+          DEFAULT: '#a855f7',
+          soft: 'rgba(168, 85, 247, 0.12)',
+          glow: 'rgba(168, 85, 247, 0.6)',
+        },
         orange: '#f0883e',
         yellow: '#d29922',
         blue: '#58a6ff',
+      },
+      animation: {
+        'shimmer': 'shimmer 4s linear infinite',
+        'pulse-slow': 'pulseSlow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'float': 'float 4s ease-in-out infinite',
+      },
+      keyframes: {
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
+        pulseSlow: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.4' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-6px)' },
+        },
       },
       fontFamily: {
         sans: [

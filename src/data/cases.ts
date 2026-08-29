@@ -12,6 +12,28 @@ export interface CaseStudy {
 
 export const cases: CaseStudy[] = [
   {
+    id: 'vibecodia-agenda',
+    name: 'VibeCodia Agenda 2.0',
+    problem:
+      'Perda de faturamento por faltas não justificadas e tempo excessivo gasto agendando clientes no WhatsApp.',
+    solution:
+      'SaaS de agendamento em 30s com validação de PIN via SMS, link personalizado, gestão de comissões e painel financeiro.',
+    result: 'Redução de 70% nas faltas e mais de 200 estabelecimentos organizados.',
+    stack: ['React', 'TypeScript', 'Fastify', 'SMS Gateway', 'Zod'],
+    status: 'production',
+  },
+  {
+    id: 'vibecodia-studio',
+    name: 'VibeCodia Studio — AI Assistant',
+    problem:
+      'Custos elevados e complexidade técnica para criar e hospedar chatbots com IA de atendimento.',
+    solution:
+      'Pipeline sequencial de 5 agentes autônomos para briefing, engenharia de prompt, guardrails e deploy no WhatsApp.',
+    result: 'Atendimento inteligente 24/7 sem alucinação de dados e integração em minutos.',
+    stack: ['Multi-Agent', 'WhatsApp Cloud API', 'Supabase', 'React'],
+    status: 'production',
+  },
+  {
     id: 'financas-gestao',
     name: 'Finanças & Gestão Integrada',
     problem:
