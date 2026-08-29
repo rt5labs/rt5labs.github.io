@@ -36,10 +36,12 @@ export default function InteractiveBotBuilder() {
     },
   ]);
 
-  const chatBottomRef = useRef<HTMLDivElement | null>(null);
+  const chatContainerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    chatBottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+    }
   }, [messages]);
 
   const handleUpdateBot = (e: React.FormEvent) => {
@@ -253,7 +255,7 @@ export default function InteractiveBotBuilder() {
           </div>
 
           {/* Chat Messages */}
-          <div className="flex-1 overflow-y-auto p-3.5 space-y-3">
+          <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-3.5 space-y-3">
             {messages.map((msg) => (
               <div
                 key={msg.id}
@@ -285,7 +287,6 @@ export default function InteractiveBotBuilder() {
                 </div>
               </div>
             ))}
-            <div ref={chatBottomRef} />
           </div>
 
           {/* Suggested Quick Questions */}

@@ -18,7 +18,7 @@ export default function StudioModule({ onNavigateToAgenda }: StudioModuleProps) 
   };
 
   return (
-    <div className="space-y-12 sm:space-y-16 animate-reveal">
+    <div id="studio" className="space-y-12 sm:space-y-16 animate-reveal">
       <StudioHero onStartBuilder={scrollToSandbox} onSimulatePipeline={scrollToPipeline} />
       <InteractiveBotBuilder />
       <AgenticPipelineVisualizer />

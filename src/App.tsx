@@ -41,6 +41,11 @@ function App() {
     return () => window.removeEventListener('hashchange', handleHash);
   }, []);
 
+  // Guarantee page starts at top on tab change
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [activeTab]);
+
   // Global keydown for Cmd+K / Ctrl+K
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {

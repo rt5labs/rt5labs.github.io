@@ -21,7 +21,7 @@ export default function AgendaModule({ onNavigateToStudio }: AgendaModuleProps) 
   };
 
   return (
-    <div className="space-y-12 sm:space-y-16 animate-reveal">
+    <div id="agenda" className="space-y-12 sm:space-y-16 animate-reveal">
       <AgendaHero onOpenDemo={scrollToDemo} onViewPricing={scrollToPricing} />
       <AgendaSimulator />
       <AgendaFeatures />
