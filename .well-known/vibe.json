@@ -1,0 +1,7 @@
+{
+  "name": "RT5 Labs",
+  "description": "RT5 Labs",
+  "url": "https://rt5labs.github.io/",
+  "version": "1.0.0",
+  "entry": "/index.html"
+}
